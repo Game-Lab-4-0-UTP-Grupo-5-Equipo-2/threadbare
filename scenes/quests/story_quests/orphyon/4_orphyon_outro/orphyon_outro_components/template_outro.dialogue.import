@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://kr18kl3rq3et"
+path="res://.godot/imported/template_outro.dialogue-967d382c92ff8e59ad205e75700381ec.tres"
+
+[deps]
+
+source_file="res://scenes/quests/story_quests/orphyon/4_orphyon_outro/orphyon_outro_components/template_outro.dialogue"
+dest_files=["res://.godot/imported/template_outro.dialogue-967d382c92ff8e59ad205e75700381ec.tres"]
+
+[params]
+
+defaults=true

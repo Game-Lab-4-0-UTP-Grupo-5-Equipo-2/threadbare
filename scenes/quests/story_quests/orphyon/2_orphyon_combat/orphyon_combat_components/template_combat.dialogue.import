@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://bv4gj5ksoxdul"
+path="res://.godot/imported/template_combat.dialogue-0ef52e03bb72c7b7566a18fe29fe0b99.tres"
+
+[deps]
+
+source_file="res://scenes/quests/story_quests/orphyon/2_orphyon_combat/orphyon_combat_components/template_combat.dialogue"
+dest_files=["res://.godot/imported/template_combat.dialogue-0ef52e03bb72c7b7566a18fe29fe0b99.tres"]
+
+[params]
+
+defaults=true

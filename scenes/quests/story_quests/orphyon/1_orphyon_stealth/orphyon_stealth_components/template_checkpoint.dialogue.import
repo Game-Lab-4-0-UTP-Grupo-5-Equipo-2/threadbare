@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://cpy6imsr2n8gk"
+path="res://.godot/imported/template_checkpoint.dialogue-066dd2df178962d6f56a95ae2132ed43.tres"
+
+[deps]
+
+source_file="res://scenes/quests/story_quests/orphyon/1_orphyon_stealth/orphyon_stealth_components/template_checkpoint.dialogue"
+dest_files=["res://.godot/imported/template_checkpoint.dialogue-066dd2df178962d6f56a95ae2132ed43.tres"]
+
+[params]
+
+defaults=true
