@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://bnwbdye67vhc5"
+path="res://.godot/imported/template_stealth.dialogue-e6c3cbf01f679f0f8fd1ec31bea234c6.tres"
+
+[deps]
+
+source_file="res://scenes/quests/story_quests/orphyon/1_orphyon_stealth/orphyon_stealth_components/template_stealth.dialogue"
+dest_files=["res://.godot/imported/template_stealth.dialogue-e6c3cbf01f679f0f8fd1ec31bea234c6.tres"]
+
+[params]
+
+defaults=true
