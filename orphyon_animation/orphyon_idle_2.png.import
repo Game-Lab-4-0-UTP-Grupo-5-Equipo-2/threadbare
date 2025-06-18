@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b23h2k5kkfied"
-path="res://.godot/imported/icon.png-487276ed1e3a0c39cad0279d744ee560.ctex"
+uid="uid://dfshitbrs4t8q"
+path="res://.godot/imported/orphyon_idle_2.png-0b6ef4ea283b5a700bda3e7c78619d1c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://icon.png"
-dest_files=["res://.godot/imported/icon.png-487276ed1e3a0c39cad0279d744ee560.ctex"]
+source_file="res://orphyon_animation/orphyon_idle_2.png"
+dest_files=["res://.godot/imported/orphyon_idle_2.png-0b6ef4ea283b5a700bda3e7c78619d1c.ctex"]
 
 [params]
 
