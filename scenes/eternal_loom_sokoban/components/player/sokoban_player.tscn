@@ -85,7 +85,6 @@ animations = [{
 z_index = 2
 script = ExtResource("1_g32nx")
 id = &"player"
-layer = 2
 tags = Array[StringName]([&"controllable"])
 metadata/_custom_type_script = "uid://cgwu1infdhqxt"
 
@@ -94,4 +93,5 @@ z_index = 1
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_siuvm")
 animation = &"idle"
-frame_progress = 0.681816
+frame = 3
+frame_progress = 0.877402

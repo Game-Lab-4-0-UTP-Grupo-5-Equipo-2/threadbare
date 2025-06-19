@@ -18,16 +18,18 @@ enum Mode {
 }
 
 const REQUIRED_ANIMATION_FRAMES: Dictionary[StringName, int] = {
-	&"idle": 10,
-	&"walk": 6,
+	&"idle": 3,
+	&"back_walk": 3,
+	&"front_walk": 2,
+	&"left_walk": 3,
+	&"right_walk": 3,
 	&"attack_01": 4,
 	&"defeated": 11,
 }
-const DEFAULT_SPRITE_FRAME: SpriteFrames = preload("uid://vwf8e1v8brdp")
 
 ## The character's name. This is used to highlight when the player's character
 ## is speaking during dialogue.
-@export var player_name: String = "Player Name"
+@export var player_name: String = "Orphyon"
 
 ## Controls how the player can interact with the world around them.
 @export var mode: Mode = Mode.COZY:
@@ -39,7 +41,7 @@ const DEFAULT_SPRITE_FRAME: SpriteFrames = preload("uid://vwf8e1v8brdp")
 
 ## The SpriteFrames must have specific animations with a certain amount of frames.
 ## See [member REQUIRED_ANIMATION_FRAMES].
-@export var sprite_frames: SpriteFrames = DEFAULT_SPRITE_FRAME:
+@export var sprite_frames: SpriteFrames:
 	set = _set_sprite_frames
 
 @export_group("Sounds")
@@ -48,6 +50,7 @@ const DEFAULT_SPRITE_FRAME: SpriteFrames = preload("uid://vwf8e1v8brdp")
 	set = _set_walk_sound_stream
 
 var input_vector: Vector2
+var last_direction: Vector2 = Vector2.DOWN
 
 @onready var player_interaction: PlayerInteraction = %PlayerInteraction
 @onready var player_fighting: Node2D = %PlayerFighting
@@ -75,12 +78,13 @@ func _set_mode(new_mode: Mode) -> void:
 
 
 func _set_sprite_frames(new_sprite_frames: SpriteFrames) -> void:
-	sprite_frames = new_sprite_frames
 	if not is_node_ready():
 		return
-	if new_sprite_frames == null:
-		new_sprite_frames = DEFAULT_SPRITE_FRAME
-	player_sprite.sprite_frames = new_sprite_frames
+	if new_sprite_frames:
+		sprite_frames = new_sprite_frames
+		player_sprite.sprite_frames = new_sprite_frames
+	else:
+		sprite_frames=player_sprite.sprite_frames
 	update_configuration_warnings()
 
 
@@ -112,7 +116,9 @@ func _get_configuration_warnings() -> PackedStringArray:
 
 func _ready() -> void:
 	_set_mode(mode)
-	_set_sprite_frames(sprite_frames)
+	if sprite_frames:
+		_set_sprite_frames(sprite_frames)
+	print("Available animations: ", player_sprite.sprite_frames.get_animation_names())
 
 
 func _unhandled_input(_event: InputEvent) -> void:
@@ -136,7 +142,7 @@ func is_running() -> bool:
 	return input_vector.length_squared() > (walk_speed * walk_speed) + 1.0
 
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	if Engine.is_editor_hint():
 		return
 
@@ -150,7 +156,7 @@ func _process(delta: float) -> void:
 	else:
 		step = moving_step
 
-	velocity = velocity.move_toward(input_vector, step * delta)
+	velocity = velocity.move_toward(input_vector, step * _delta)
 
 	move_and_slide()
 
@@ -178,3 +184,4 @@ func _set_walk_sound_stream(new_value: AudioStream) -> void:
 	if not is_node_ready():
 		await ready
 	_walk_sound.stream = walk_sound_stream
+	

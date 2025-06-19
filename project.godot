@@ -13,7 +13,7 @@ config_version=5
 config/name="Threadbare"
 run/main_scene="uid://huuo8mnwsphv"
 config/features=PackedStringArray("4.4", "GL Compatibility")
-config/icon="uid://bc70phmq55dkf"
+config/icon="uid://b23h2k5kkfied"
 
 [autoload]
 
@@ -49,7 +49,7 @@ window/stretch/mode="viewport"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg", "res://addons/git_lfs_checker/plugin.cfg", "res://addons/sprite_frames_exported_textures/plugin.cfg")
+enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg", "res://addons/godot_piskel_importer/plugin.cfg", "res://addons/sprite_frames_exported_textures/plugin.cfg")
 
 [global_group]
 

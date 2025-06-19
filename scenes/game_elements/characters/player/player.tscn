@@ -47,10 +47,11 @@ anim_speed_min = 1.0
 anim_speed_max = 1.0
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_3vyb7"]
-height = 42.0
+radius = 14.0
+height = 34.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_blfj0"]
-size = Vector2(110, 80)
+size = Vector2(30.5, 22.25)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_je7p5"]
 size = Vector2(32, 47)
@@ -431,6 +432,7 @@ _data = {
 [node name="Player" type="CharacterBody2D" groups=["player"]]
 collision_mask = 531
 script = ExtResource("1_g2els")
+player_name = "Player Name"
 
 [node name="PlayerDustParticles" type="GPUParticles2D" parent="."]
 unique_name_in_owner = true
@@ -454,6 +456,7 @@ autoplay = "idle"
 script = ExtResource("3_qlg0r")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(6, -11)
 rotation = -1.5708
 shape = SubResource("CapsuleShape2D_3vyb7")
 
@@ -469,7 +472,7 @@ script = ExtResource("6_3in67")
 character = NodePath("../..")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerInteraction/InteractZone"]
-position = Vector2(47, -30)
+position = Vector2(6, -11)
 shape = SubResource("RectangleShape2D_blfj0")
 
 [node name="InteractMarker" type="Marker2D" parent="PlayerInteraction"]
@@ -543,6 +546,7 @@ script = ExtResource("7_0owmy")
 
 [node name="WalkSound" type="AudioStreamPlayer2D" parent="."]
 unique_name_in_owner = true
+position = Vector2(1, 0)
 stream = ExtResource("11_blfj0")
 volume_db = -5.0
 pitch_scale = 7.0
