@@ -1,0 +1,11 @@
+	for side in["left","right"]:
+		if portraits.has(side):
+			portraits[side].visible=false
+	var side = "left"
+	if "portrait_side" in dialogue_line.extra_data:
+		side = dialogue_line.extra_data["portrait_side"]
+	if portraits.has(side):
+		var portrait_path: String = "res://orphyon_animation/portrait/%s.png" % dialogue_line.character
+		if ResourceLoader.exists(portrait_path):
+			portraits[side].texture = load(portrait_path)
+			portraits[side].visible = true

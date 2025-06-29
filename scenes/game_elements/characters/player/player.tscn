@@ -432,7 +432,7 @@ _data = {
 [node name="Player" type="CharacterBody2D" groups=["player"]]
 collision_mask = 531
 script = ExtResource("1_g2els")
-player_name = "Player Name"
+player_name = "orphyon"
 
 [node name="PlayerDustParticles" type="GPUParticles2D" parent="."]
 unique_name_in_owner = true
@@ -490,6 +490,7 @@ offset_right = 1.0
 offset_bottom = 11.0
 grow_horizontal = 2
 grow_vertical = 2
+label_text = "Hablar"
 
 [node name="PlayerFighting" type="Node2D" parent="."]
 unique_name_in_owner = true

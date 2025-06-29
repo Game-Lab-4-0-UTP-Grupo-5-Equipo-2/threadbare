@@ -72,10 +72,13 @@ var _player_name: String = ""
 ## The menu of responses
 @onready var responses_menu: DialogueResponsesMenu = %ResponsesMenu
 
+#@onready var response_example: Button = $Balloon/PanelContainer/VBoxContainer/ResponsesMenu/ResponseExample
+
 @onready var talk_sound_player: AudioStreamPlayer = $TalkSoundPlayer
 
-
-func _ready() -> void:
+func _ready() -> void: 
+	#%DialogueLabel.add_theme_color_override("font_color", Color.WHITE)
+	#$Balloon/PanelContainer/VBoxContainer/ResponsesMenu/ResponseExample.add_theme_color_override("font_color", Color.CYAN)
 	balloon.hide()
 	Engine.get_singleton("DialogueManager").mutated.connect(_on_mutated)
 

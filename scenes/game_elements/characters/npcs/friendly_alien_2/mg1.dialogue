@@ -1,0 +1,22 @@
+# SPDX-FileCopyrightText: The Threadbare Authors
+# SPDX-License-Identifier: MPL-2.0
+~ start
+alien2: Saludos, Orphyon.
+- id: siguiente
+alien2: Me comentaron que vendrías a este lugar.
+- id: siguiente
+alien2: ¿Vienes por el núcleo de poder?.
+- id: siguiente
+alien2: Entiendo, pero permíteme advertirte que el camino a este no será nada sencillo, especialmente para un extraño como tú.
+- id: siguiente
+alien2: Te encontrarás con géiseres, lava y cristales antes de que puedas sujetar en tus manos tu objetivo principal.
+- id: siguiente
+alien2: No obstante, deberás utilizar las plataformas para esquivar los peligros de esta cueva.
+- id: siguiente
+alien2: Y lo más importante, ¡tener buenos reflejos!
+- id: siguiente
+alien2: Nos veremos del otro lado del charco.
+- id: siguiente
+alien2: ¡Buena suerte!
+- id: fin
+=> END

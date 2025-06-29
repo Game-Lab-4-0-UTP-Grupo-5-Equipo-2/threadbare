@@ -34,7 +34,7 @@ class_name CollectibleItem extends Node2D
 
 @onready var interact_area: InteractArea = $InteractArea
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
-@onready var sprite_2d: Sprite2D = $Sprite2D
+@onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
 @onready var appear_sound: AudioStreamPlayer = %AppearSound
 
 
@@ -54,11 +54,15 @@ func _get_configuration_warnings() -> PackedStringArray:
 func _set_item(new_value: InventoryItem) -> void:
 	item = new_value
 
-	if sprite_2d:
-		sprite_2d.texture = item.get_world_texture() if item else null
+	if animated_sprite_2d and item:
+		var anim_name = item.get_world_animation_name()
+		if animated_sprite_2d.sprite_frames.has_animation(anim_name):
+			animated_sprite_2d.play(anim_name)
+		else:
+			push_warning("No se encontró la animación '%s' para el ítem." %anim_name)
 
 	if interact_area:
-		interact_area.action = "Collect " + item.type_name() if item else "Collect"
+		interact_area.action = "Recolectar" + item.type_name() if item else "Recolectar"
 
 	update_configuration_warnings()
 
@@ -66,7 +70,7 @@ func _set_item(new_value: InventoryItem) -> void:
 func _ready() -> void:
 	_set_item(item)
 	_update_based_on_revealed()
-	sprite_2d.modulate = Color.WHITE if revealed else Color.TRANSPARENT
+	animated_sprite_2d.modulate = Color.WHITE if revealed else Color.TRANSPARENT
 
 	if Engine.is_editor_hint():
 		return
@@ -105,5 +109,5 @@ func _on_interacted(player: Player, _from_right: bool) -> void:
 func _update_based_on_revealed() -> void:
 	if interact_area:
 		interact_area.disabled = not revealed
-	if sprite_2d:
-		sprite_2d.visible = revealed
+	if animated_sprite_2d:
+		animated_sprite_2d.visible = revealed

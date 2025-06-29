@@ -1,0 +1,44 @@
+[gd_resource type="SpriteFrames" load_steps=6 format=3 uid="uid://cuc263pntdkpm"]
+
+[ext_resource type="Texture2D" uid="uid://02oup3hyqjwf" path="res://orphyon_animation/friendly_alien_intro/friendly_alien_intro.png" id="1_s4ny4"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rx280"]
+atlas = ExtResource("1_s4ny4")
+region = Rect2(0, 0, 720, 720)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8fggm"]
+atlas = ExtResource("1_s4ny4")
+region = Rect2(720, 0, 720, 720)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2ncow"]
+atlas = ExtResource("1_s4ny4")
+region = Rect2(0, 720, 720, 720)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_idpef"]
+atlas = ExtResource("1_s4ny4")
+region = Rect2(720, 720, 720, 720)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rx280")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8fggm")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2ncow")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_idpef")
+}],
+"loop": true,
+"name": &"talking",
+"speed": 5.0
+}]

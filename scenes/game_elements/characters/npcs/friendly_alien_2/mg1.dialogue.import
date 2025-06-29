@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://by8qthjdyhbbx"
+path="res://.godot/imported/mg1.dialogue-d7e321e177c5051721a873120e68f860.tres"
+
+[deps]
+
+source_file="res://scenes/game_elements/characters/npcs/friendly_alien_2/mg1.dialogue"
+dest_files=["res://.godot/imported/mg1.dialogue-d7e321e177c5051721a873120e68f860.tres"]
+
+[params]
+
+defaults=true

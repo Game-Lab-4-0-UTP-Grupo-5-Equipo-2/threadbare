@@ -21,7 +21,7 @@ var interact_label_position: Vector2:
 	set(new_value):
 		disabled = new_value
 		set_collision_layer_value(INTERACTABLE_LAYER, not disabled)
-@export var action: String = "Talk"
+@export var action: String = "Hablar"
 
 
 func start_interaction(player: Player, from_right: bool) -> void:
