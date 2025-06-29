@@ -1,0 +1,42 @@
+[gd_scene load_steps=6 format=3 uid="uid://dpfxb512wm8os"]
+
+[ext_resource type="Script" uid="uid://mbfqmrnr6h06" path="res://scenes/game_elements/characters/npcs/talker/components/talker.gd" id="1_6jg5e"]
+[ext_resource type="Script" uid="uid://du8wfijr35r35" path="res://scenes/game_elements/props/interact_area/components/interact_area.gd" id="2_eldog"]
+[ext_resource type="SpriteFrames" uid="uid://dhvyljax5vqdu" path="res://scenes/game_elements/characters/npcs/friendly_alien_2/friendly_alien_2.tres" id="2_umd7m"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rvqgh"]
+radius = 14.0
+height = 84.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_umd7m"]
+size = Vector2(84, 124)
+
+[node name="AlienAmigable_2" type="CharacterBody2D"]
+script = ExtResource("1_6jg5e")
+npc_name = "alien2"
+sprite_frames = ExtResource("2_umd7m")
+metadata/_custom_type_script = "uid://mbfqmrnr6h06"
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(20.75, -62.5)
+scale = Vector2(0.20625, 0.206944)
+sprite_frames = ExtResource("2_umd7m")
+animation = &"idle"
+flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(20, -12)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_rvqgh")
+
+[node name="InteractArea" type="Area2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(25, -151)
+collision_layer = 33
+script = ExtResource("2_eldog")
+metadata/_custom_type_script = "uid://du8wfijr35r35"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractArea"]
+position = Vector2(-5, 112)
+shape = SubResource("RectangleShape2D_umd7m")

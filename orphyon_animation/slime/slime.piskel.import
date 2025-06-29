@@ -1,0 +1,14 @@
+[remap]
+
+importer="com.technohacker.piskel"
+type="ImageTexture"
+uid="uid://8f4c62jlme84"
+path="res://.godot/imported/slime.piskel-9b4f1777a0c66be095a546cb1a21b92f.tres"
+
+[deps]
+
+source_file="res://orphyon_animation/slime/slime.piskel"
+dest_files=["res://.godot/imported/slime.piskel-9b4f1777a0c66be095a546cb1a21b92f.tres"]
+
+[params]
+

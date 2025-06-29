@@ -1,0 +1,32 @@
+[gd_resource type="SpriteFrames" load_steps=5 format=3 uid="uid://dhvyljax5vqdu"]
+
+[ext_resource type="Texture2D" uid="uid://dx2w0u4m4rj71" path="res://orphyon_animation/friendly_alien_minigame1/idle.png" id="1_y7tns"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bud72"]
+atlas = ExtResource("1_y7tns")
+region = Rect2(0, 0, 720, 720)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_obdjl"]
+atlas = ExtResource("1_y7tns")
+region = Rect2(0, 720, 720, 720)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uiceq"]
+atlas = ExtResource("1_y7tns")
+region = Rect2(0, 1440, 720, 720)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bud72")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_obdjl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uiceq")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 4.0
+}]

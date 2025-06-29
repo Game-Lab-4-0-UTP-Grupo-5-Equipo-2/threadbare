@@ -41,4 +41,12 @@ static func with_type(a_type: ItemType) -> InventoryItem:
 
 
 func type_name() -> String:
-	return ItemType.find_key(type).to_pascal_case()
+	#return ItemType.find_key(type).to_pascal_case()
+	match type:
+		ItemType.MEMORY: return " Núcleo 1"
+		ItemType.IMAGINATION: return " Núcleo 2"
+		ItemType.SPIRIT: return " Núcleo 3"
+		_: return " Desconocido"
+
+func get_world_animation_name() -> StringName:
+	return type_name().to_snake_case()

@@ -4,11 +4,33 @@
 ~ start
 do animation_player.play(&"walk_on")
 do animation_player.animation_finished
-Welcome to the StoryQuest template, where you'll learn how to mod elements of each scene and create your own StoryQuest! Let's start with the intro.
-In the Godot FileSystem, find the intro folder and double-click on the intro dialogue file to edit the text.
-Press enter to add a new line. Each line becomes a new dialogue box in-game.
-Select Cinematic node; drag your StoryQuest dialogue to the "Dialogue" field in the Inspector.
-Set the next scene using the "Next Scene" field in the Inspector.
+  alien1: "¡hey!, ¿qué te trae en el llano?"
+- id: siguiente
+  orphyon: "(sorprendido y asustado por no saber qué es lo que te está ocurriendo)"
+- id: siguiente
+  alien1: Mmm, ya veo. ¿Con que no eres del lugar?
+- id: siguiente
+  alien1: Por si te lo preguntas,
+- id: siguiente
+  alien1: soy
+- id: siguiente
+  mensaje: *ininteligible* (erupcionó un geiser)
+- id: siguiente
+  alien1: Un gusto, ¿y tú quien eres?
+- id: siguiente
+  orphyon: (no entiende lo que está hablando)
+- id: siguiente
+  alien1: Mira, entiendo que estés desubicado, ¡pero tampoco es para que te lo tomes así! ¿Vale?
+- id: siguiente
+  orphyon: (sigue sin entender, pero intenta comprender lo que dice) *hace una seña apuntando a su nave*
+- id: siguiente
+  alien1: Ahhh, ya entiendo. Así que de ahí es de donde vienes. Por lo que veo, no pinta nada bien.
+- id: siguiente
+  alien1: Bueno, no te preocupes, buscaré ayuda para saber lo que sea que estés buscando.
+- id: siguiente
 do animation_player.play(&"walk_off")
-Explore other elements to mod, like the placeholder image, tile map, and animation options for this scene!
+  alien1: Sígueme y te iré enseñando este lado del planeta.
+- id: siguiente
+  mensaje: *comienza la 1ra parte del gameplay; mientras tanto, el protagonista irá conociendo los controles y el primer escenario*
+- id: comenzar 
 => END

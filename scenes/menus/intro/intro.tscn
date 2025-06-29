@@ -354,13 +354,11 @@ grow_vertical = 2
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer/Control"]
 material = SubResource("ShaderMaterial_8twl8")
 layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+anchors_preset = -1
+offset_top = -408.0
+offset_right = 1920.0
+offset_bottom = 1512.0
 texture = ExtResource("2_a6oma")
-expand_mode = 3
 stretch_mode = 6
 
 [node name="Sketch01" type="Sprite2D" parent="CanvasLayer/Control"]
@@ -371,12 +369,12 @@ texture = ExtResource("3_gvvib")
 
 [node name="Sketch02" type="Sprite2D" parent="CanvasLayer/Control"]
 visible = false
-position = Vector2(1493, 540)
+position = Vector2(1501, 463)
 texture = ExtResource("4_gvvib")
 
 [node name="Sketch03" type="Sprite2D" parent="CanvasLayer/Control"]
 visible = false
-position = Vector2(1403, 540)
+position = Vector2(1390, 455)
 texture = ExtResource("5_mqh0g")
 
 [node name="Sketch04" type="Sprite2D" parent="CanvasLayer/Control"]
@@ -386,7 +384,8 @@ texture = ExtResource("6_4ymxw")
 
 [node name="Sketch05" type="Sprite2D" parent="CanvasLayer/Control"]
 visible = false
-position = Vector2(1217, 451)
+position = Vector2(541.577, 718.5)
+scale = Vector2(0.846975, 0.850333)
 texture = ExtResource("7_5fnp7")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
@@ -399,6 +398,6 @@ speed_scale = 0.5
 script = ExtResource("1_qeukb")
 dialogue = ExtResource("4_rpon1")
 animation_player = NodePath("../AnimationPlayer")
-next_scene = "uid://cufkthb25mpxy"
+next_scene = "uid://dpt3dm0nm7a4w"
 spawn_point_path = "SpawnPointAfterIntro"
 metadata/_custom_type_script = "uid://x1mxt6bmei2o"
