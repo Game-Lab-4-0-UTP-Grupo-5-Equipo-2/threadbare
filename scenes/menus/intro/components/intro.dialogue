@@ -6,16 +6,7 @@
 do animation_player.play(&"delay_start")
 do animation_player.animation_finished
 do animation_player.play(&"sketches")
-[speed=0.5]Un día, en el año 2050, un astronauta aterrizaría en un planeta extraño, especialmente uno radioactivo.
-- id: siguiente
-[speed=0.5]Sin embargo, su nave presentaba una falla interna, por lo que el aterrizaje fue algo forzado.
-- id: siguiente
-[speed=0.5]Lo que provocó que se estrellara contra el suelo y terminara inutilizable.
-- id: siguiente 
-[speed=0.5]A partir de ahora, nuestro protagonista, Orphyon, deberá emprender una aventura inesperada en este planeta inusual para regresar a casa.
-- id: siguiente
-[speed=0.5]De algún modo,
-- id: siguiente
-[speed=0.5]antes de que sea demasiado tarde...
-- id: siguiente
+[speed=0.5]You know that feeling you get when you wrap yourself in your favorite blanket? Like a cozy hug from a loved one.
+[speed=0.5]What if I told you there is a world made of fabric, not too far away and not too near, that used to feel just like that hug?
+[speed=0.5]This world was made of stitches and stories, and people were happy. Until ...
 => END
