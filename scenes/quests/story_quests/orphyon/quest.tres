@@ -4,10 +4,10 @@
 
 [resource]
 script = ExtResource("1_dftay")
-title = ""
-description = ""
-authors = Array[String]([])
-affiliation = ""
+title = "2050: Scape the Nuclear Planet"
+description = "En el año 2050, Orphyon, un astronauta, quedaría varado en un planeta después de que su nave quedara en ruinas. Por lo tanto, deberá aventurarse en el planeta, superar y sobrevivir a distintos obstáculos y enemigos para recolectar los núcleos de poder y otros objetos que lo ayudarán a regresar a casa, mientras consigue aliados, resuelve puzzles y derrota a quienes le impiden llegar a su objetivo, antes de que sea muy tarde."
+authors = Array[String](["Christian Reyes Coello", "Gabriel Ruiz Montalvan", "Ana Arias Damian", "Carlos Proa Sanchez"])
+affiliation = "UTP: Gamelab 4.0"
 first_scene = "uid://c1gdct760l86h"
 animation_name = &""
 metadata/_custom_type_script = "uid://dts1hwdy3phin"
