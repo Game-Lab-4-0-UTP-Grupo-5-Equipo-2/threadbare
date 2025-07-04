@@ -1,0 +1,70 @@
+[gd_resource type="SpriteFrames" load_steps=9 format=3 uid="uid://d4b4ausog5d6y"]
+
+[ext_resource type="Texture2D" uid="uid://p8gq5kbsmmuf" path="res://orphyon_animation/enemies/mutant_alien/punching_alien/sword_alien/sword_mutant_alien.png" id="1_ehhl6"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_653ij"]
+atlas = ExtResource("1_ehhl6")
+region = Rect2(0, 1040, 260, 260)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ut7av"]
+atlas = ExtResource("1_ehhl6")
+region = Rect2(0, 1300, 260, 260)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0fgj4"]
+atlas = ExtResource("1_ehhl6")
+region = Rect2(0, 0, 260, 260)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hgc31"]
+atlas = ExtResource("1_ehhl6")
+region = Rect2(0, 260, 260, 260)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lftsg"]
+atlas = ExtResource("1_ehhl6")
+region = Rect2(0, 520, 260, 260)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mta05"]
+atlas = ExtResource("1_ehhl6")
+region = Rect2(0, 0, 260, 260)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2ihwf"]
+atlas = ExtResource("1_ehhl6")
+region = Rect2(0, 780, 260, 260)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_653ij")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ut7av")
+}],
+"loop": true,
+"name": &"alerted",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0fgj4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hgc31")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 4.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lftsg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mta05")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2ihwf")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 7.0
+}]

@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://de6tnuic53mjj"
+path="res://.godot/imported/intro.dialogue-298c6473e696ae36fdf139605d157490.tres"
+
+[deps]
+
+source_file="res://scenes/quests/story_quests/orphyon/0_orphyon_intro/orphyon_intro_components/intro.dialogue"
+dest_files=["res://.godot/imported/intro.dialogue-298c6473e696ae36fdf139605d157490.tres"]
+
+[params]
+
+defaults=true
