@@ -1,0 +1,16 @@
+do animation_player.play(&"delay_start")
+do animation_player.animation_finished
+do animation_player.play(&"sketches")
+[speed=0.5]Un día, en el año 2050, un astronauta aterrizaría en un planeta extraño, especialmente uno radioactivo.
+- id: siguiente
+[speed=0.5]Sin embargo, su nave presentaba una falla interna, por lo que el aterrizaje fue algo forzado.
+- id: siguiente
+[speed=0.5]Lo que provocó que se estrellara contra el suelo y terminara inutilizable.
+- id: siguiente 
+[speed=0.5]A partir de ahora, nuestro protagonista, Orphyon, deberá emprender una aventura inesperada en este planeta inusual para regresar a casa.
+- id: siguiente
+[speed=0.5]De algún modo,
+- id: siguiente
+[speed=0.5]antes de que sea demasiado tarde...
+- id: siguiente
+=> END

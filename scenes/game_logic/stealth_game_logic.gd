@@ -17,9 +17,12 @@ func _ready() -> void:
 
 
 func _on_player_detected(player: Node2D) -> void:
-	player.mode = Player.Mode.DEFEATED
-	await get_tree().create_timer(2.0).timeout
-	SceneSwitcher.reload_with_transition(Transition.Effect.FADE, Transition.Effect.FADE)
+	if player is Player:
+		player.mode = Player.Mode.DEFEATED
+		await get_tree().create_timer(2.0).timeout
+		SceneSwitcher.reload_with_transition(Transition.Effect.FADE, Transition.Effect.FADE)
+	else:
+		push_warning("Señal player_detected recibió un objeto que no es Player: %s" % player)
 
 
 func _set_zoom(new_value: float) -> void:

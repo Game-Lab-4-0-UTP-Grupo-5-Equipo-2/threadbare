@@ -275,7 +275,9 @@ func _on_enter_state(new_state: State) -> void:
 		State.ALERTED:
 			if not _alert_sound.playing:
 				_alert_sound.play()
-			player_detected.emit(_player_in_sight())
+			var player:= _player_in_sight()
+			if player is Player:
+				player_detected.emit(player)
 			animation_player.play(&"alerted")
 		State.INVESTIGATING:
 			guard_movement.start_moving_now()
